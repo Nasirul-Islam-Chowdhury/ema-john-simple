@@ -3,10 +3,10 @@
     grid-template-columns: 4fr 1fr;
 }
 .products-container{
-    margin: 50px 30px;
+    margin: 80px 50px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 45px
+    gap: 20px
 }
 .cart-container{
     background-color: rgba(255, 253, 0, 0.3);
