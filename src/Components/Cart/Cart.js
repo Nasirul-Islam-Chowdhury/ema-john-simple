@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Cart.css'
 
-const Cart = (props) => {
-    const {cart} = props;
+const Cart = ({cart,children}) => {
     let total = 0;
     let shipping = 0;
     let quantity = 0;
@@ -19,8 +19,9 @@ const Cart = (props) => {
             <h2>Selected Items: {quantity}</h2>
             <p>Total Price: ${total}</p>
             <p>Total Shipping: ${shipping}</p>
-            <p>Tax:${tax}</p>
-            <h5>Grand Total: ${grandTotal}</h5>
+            <p>Tax: ${tax}</p>
+            <h5>Grand Total: ${grandTotal.toFixed(2)}</h5>
+          {children}
         </div>
     );
 };
